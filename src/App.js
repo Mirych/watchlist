@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Header } from './components/Header';
+import { Movies } from './components/Movies';
 import { Watchlist } from './components/Watchlist';
 import { Watched } from './components/Watched';
 import { Add } from './components/Add';
@@ -17,6 +18,7 @@ function App() {
         <Header />
         <Routes>
           <Route exact path="/" element={<Watchlist/>} />          
+          <Route path="/movies" element={<Movies/>} />        
           <Route path="/watched" element={<Watched/>} />        
           <Route path="/add" element={<Add/>} />
         </Routes>

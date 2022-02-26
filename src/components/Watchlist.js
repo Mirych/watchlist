@@ -22,7 +22,7 @@ export const Watchlist = () => {
                         ))}    
                     </div>    
                 ) : (
-                   <h2 className="no-movies">No movies in ypur list</h2> 
+                   <h2 className="no-movies">No movies in your list</h2> 
                 )}        
             </div>
         </div>
