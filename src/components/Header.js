@@ -12,17 +12,21 @@ export const Header = () => {
 
                     <ul className="nav-links">
                         <li>
+                            <i class="fas fa-film"></i>
                             <Link to="/movies">Movies</Link>
                         </li>
                         <li>
+                            <i class="fas fa-bookmark"></i>
                             <Link to="/">My Watch List</Link>
                         </li>
                         <li>
+                            <i class="fas fa-eye"></i>
                             <Link to="/watched">Watched</Link>
                         </li>
                         <li>
                             <Link to="/add" className="btn">
-                                + Add
+                            <i class="fas fa-search"></i>
+                                Search
                             </Link>
                         </li>
                     </ul>

@@ -114,7 +114,21 @@ header .nav-links li {
 }
 
 header .nav-links li:last-child {
-  margin-right: 0;
+  margin-right: 0;  
+}
+
+header .nav-links li i {
+  color: white;
+  margin-right: 5px;
+}
+
+header .nav-links li i:last-child {
+  color: var(--primary)
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #21d07a;  
 }
 
 /* Add Page */
@@ -223,13 +237,12 @@ header .nav-links li:last-child {
   }
 }
 
-.movie-card {
-  width: 100%;
-  border-radius: 5px;
-  overflow: hidden;
+.movie-card,
+.movie-card-img {
   position: relative;
+  border-radius: 10px;
+  overflow: hidden;
   border: 0;
-  display: block;
 }
 
 .movie-card img {
@@ -267,6 +280,13 @@ header .nav-links li:last-child {
 
 .movie-card:hover .inner-card-controls {
   opacity: 1;
+}
+
+.movie-card-title {
+  margin-top: 5px;
+  padding-right: 4px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .ctrl-btn {
