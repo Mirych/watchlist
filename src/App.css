@@ -63,6 +63,7 @@ body {
   cursor: pointer;
 }
 
+.ctrl-btn:disabled,
 .btn:disabled {
   pointer-events: none;
   opacity: 0.5;
@@ -262,6 +263,7 @@ header .nav-links li i:last-child {
 
 .movie-card:hover .overlay {
   border: 3px solid var(--secondary);
+  border-radius: 10px;
 }
 
 .movie-card .inner-card-controls {

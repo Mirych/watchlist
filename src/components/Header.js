@@ -12,20 +12,20 @@ export const Header = () => {
 
                     <ul className="nav-links">
                         <li>
-                            <i class="fas fa-film"></i>
+                            <i className="fas fa-film"></i>
                             <Link to="/movies">Movies</Link>
                         </li>
                         <li>
-                            <i class="fas fa-bookmark"></i>
+                            <i className="fas fa-bookmark"></i>
                             <Link to="/">My Watch List</Link>
                         </li>
                         <li>
-                            <i class="fas fa-eye"></i>
+                            <i className="fas fa-eye"></i>
                             <Link to="/watched">Watched</Link>
                         </li>
                         <li>
                             <Link to="/add" className="btn">
-                            <i class="fas fa-search"></i>
+                            <i className="fas fa-search"></i>
                                 Search
                             </Link>
                         </li>

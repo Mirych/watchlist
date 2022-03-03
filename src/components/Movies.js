@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { MovieCard } from './MovieCard';
 import 'swiper/css';
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -42,20 +43,14 @@ export const Movies = () => {
                     slidesPerView={5.5}
                     spaceBetween={5}                    
                     slidesPerGroup={2}
+                    preventInteractionOnTransition={true}      
+                    preventClicks={false}       
+                    preventClicksPropagation={false}
                     className="mySwiper"
                     >
                     { items.map(item => (    
                         <SwiperSlide key={item.id}>
-                        <div className="movie-card">
-                            <div className="movie-card-img">
-                                <div className="overlay"></div>            
-                                <img 
-                                    src={`https://image.tmdb.org/t/p/w200${item.poster_path}`} 
-                                    alt={`${item.poster} Poster`}
-                                /> 
-                                </div>
-                            <p className='movie-card-title'>{item.title}</p>
-                        </div>   
+                            <MovieCard movie={item} type="all"/>                        
                         </SwiperSlide>                                
                     )) }                                                   
                 </Swiper>                                  
